@@ -69,5 +69,9 @@ class Database {
         $this->execute();
         return $this->stat->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function rowCount() {
+        return $this->stat->rowCount();
+    }
     
 }
