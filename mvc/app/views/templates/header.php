@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman <?= $data['judul']; ?></title>
     <link href="<?= BASEURL; ?>/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= BASEURL; ?>/css/myCSS/header.css">
+    <link rel="stylesheet" href="<?= BASEURL; ?>/css/myCSS/header1.css">
 </head>
 <body>
 
