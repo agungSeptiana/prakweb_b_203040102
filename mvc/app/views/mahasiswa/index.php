@@ -1,7 +1,13 @@
 <div class="container mt-3">
 
     <div class="row">
-        <div class="col-6">
+        <div class="col-lg-6">
+            <?php Flasher::flash(); ?>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#forModal">
             Tambah Data Mahasiswa
         </button>
@@ -24,31 +30,31 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="judulModal">Tambah Data Mahasiswa</h1>
+        <h1 class="modal-title fs-5 text-light" id="judulModal">Tambah Data Mahasiswa</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
         <div class="modal-body">
         <form action="<?= BASEURL; ?>/mahasiswa/tambah" method="post">
             <div class="mb-3">
-                <label for="nama" class="form-label">Nama</label>
+                <label for="nama" class="form-label text-light">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama">
             </div>
             <div class="mb-3">
-                <label for="nrp" class="form-label">Nrp</label>
+                <label for="nrp" class="form-label text-light">Nrp</label>
                 <input type="number" class="form-control" id="nrp" name="nrp">
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label text-light">Email</label>
                 <input type="email" class="form-control" id="email" name="email">
             </div>
-            <select for="jurusan" class="form-select" id="jurusan" name="jurusan" aria-label="Default select example">
+            <select for="jurusan" class="form-select bg-rgba(255,255,255,0.2) text-black" id="jurusan" name="jurusan" aria-label="Default select example">
                 <option selected>Jurusan</option>
-                <option value="Teknik Industri">Teknik Industri</option>
-                <option value="Teknik Pangan">Teknik Pangan</option>
-                <option value="Teknik Mesin">Teknik Mesin</option>
-                <option value="Teknik Informatika">Teknik Informatika</option>
-                <option value="Teknik Lingkungan">Teknik Lingkungan</option>
-                <option value="Teknik Perencanaan Wilayah dan Kota">Teknik Perencanaan Wilayah dan Kota</option>
+                <option value="Teknik Industri" class="text-black">Teknik Industri</option>
+                <option value="Teknik Pangan" class="text-black">Teknik Pangan</option>
+                <option value="Teknik Mesin" class="text-black">Teknik Mesin</option>
+                <option value="Teknik Informatika" class="text-black">Teknik Informatika</option>
+                <option value="Teknik Lingkungan" class="text-black">Teknik Lingkungan</option>
+                <option value="Teknik Perencanaan Wilayah dan Kota" class="text-black">Teknik Perencanaan Wilayah dan Kota</option>
             </select>
         </div>
       <div class="modal-footer">
